@@ -1,8 +1,21 @@
 package org.northernconnection.refactoring;
 
-public class Sheet {
+import java.util.HashMap;
 
-    public String get(String position) {
-        return "";
+class Sheet {
+
+    private HashMap<String, String> map;
+
+    Sheet() {
+        this.map = new HashMap<>();
+    }
+
+    String get(String theCell) {
+        String content = this.map.get(theCell);
+        return content != null ? content : "";
+    }
+
+    void put(String theCell, String content) {
+        this.map.put(theCell, content);
     }
 }
