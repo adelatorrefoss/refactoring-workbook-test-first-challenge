@@ -12,23 +12,23 @@ public class SimpleSpreadsheetTest {
         assertEquals("", sheet.get("A1"));
         assertEquals("", sheet.get("ZX347"));
     }
-//
-//// Implement each test before going to the next one.
-//
-//    public void testThatTextCellsAreStored() {
-//        Sheet sheet = new Sheet();
-//        String theCell = "A21";
-//
-//        sheet.put(theCell, "A string");
-//        assertEquals("A string", sheet.get(theCell));
-//
-//        sheet.put(theCell, "A different string");
-//        assertEquals("A different string", sheet.get(theCell));
-//
-//        sheet.put(theCell, "");
-//        assertEquals("", sheet.get(theCell));
-//    }
-//
+
+
+    @Test
+    public void testThatTextCellsAreStored() {
+        Sheet sheet = new Sheet();
+        String theCell = "A21";
+
+        sheet.put(theCell, "A string");
+        assertEquals("A string", sheet.get(theCell));
+
+        sheet.put(theCell, "A different string");
+        assertEquals("A different string", sheet.get(theCell));
+
+        sheet.put(theCell, "");
+        assertEquals("", sheet.get(theCell));
+    }
+
 //// Implement each test before going to the next one; then refactor.
 //
 //    public void testThatManyCellsExist() {
